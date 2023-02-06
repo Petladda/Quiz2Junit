@@ -1,0 +1,23 @@
+package Quiz2;
+
+import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
+import org.junit.Before;
+import org.junit.Test;
+
+public class countLetterATest {
+	QuizOneJunit obj2;
+	@Before
+	public void Setup() {
+		obj2 = new QuizOneJunit();
+	}
+	
+	@Test
+	public void test() {
+		int output = obj2.countLetterA("Apple");
+		assertEquals(output, 1);
+		
+	}
+
+
+}
