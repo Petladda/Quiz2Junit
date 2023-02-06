@@ -1,0 +1,23 @@
+package Quiz2;
+
+import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
+
+public class checkTwoLetterTest {
+	QuizOneJunit obj3;
+	
+	@Before
+	public void Setup() {
+		obj3 = new QuizOneJunit();
+	}
+	
+	@Test
+	public void test() {
+		boolean output = obj3.checkTwoLetter("He");
+		assertTrue("he", output);
+		
+
+	}
+
+}
